@@ -47,11 +47,13 @@ plt.show()
 ## Cell 6 — Boxplot
 ```python
 plt.figure(figsize=(8,5))
-sns.boxplot(x='target', y='age', data=df, palette='Set2')
+sns.boxplot(x='target', y='age', data=df, 
+            hue='target', palette='Set2', legend=False)
 plt.title('Age vs Heart Disease')
 plt.xlabel('Target (0=No, 1=Yes)')
 plt.ylabel('Age')
 plt.show()
+
 ```
 
 ## Cell 7 — Heatmap
